@@ -1,5 +1,6 @@
 import React from 'react'; 
 import './directory.styles.scss'; 
+import DirectoryItem from '../directory-item/directory-item.component'; 
 
 class Directory extends React.Component {
        
@@ -34,6 +35,17 @@ class Directory extends React.Component {
             }, 
             ]
            }
+       }
+
+       render() {
+           return (
+               <div className='directory'>
+                 { this.state.items.map(({title, id, imageURL}) => {
+                       <DirectoryItem title={title} id={id} imageURL={imageURL} /> 
+                   })}
+               </div>
+                
+           )
        }
     
 }
