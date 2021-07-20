@@ -1,5 +1,5 @@
 import React from 'react'; 
-import './direct-item.styles.scss'; 
+import './directory-item.styles.scss'; 
 
 const DirectoryItem = ({ title, subtitle }) => {
     return (<div className='directory-item'>
