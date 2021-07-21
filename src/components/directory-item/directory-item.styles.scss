@@ -13,15 +13,16 @@
     cursor: pointer; 
 
     & .background-image {
-      transform:scale(1.15);
+      transform: scale(1.15);
       transition: transform 5s cubic-bezier(0.25, 0.46, 0.45, 0.94); 
     }
 
     & .item-content {
       opacity: 0.9; 
+      transition-duration: 1s; 
     }
   }
-
+  
   
   &.large {
     height: 46vh; //1.57x directory itm height; maybe look for a function to do this?
