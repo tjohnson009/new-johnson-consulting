@@ -7,8 +7,21 @@
   justify-content: center;
   border: 1px solid black;
   margin: 0 7.5px 15px;
-  background-position: center;
-  background-size: cover;
+  overflow: hidden;
+  
+  &:hover {
+    cursor: pointer; 
+
+    & .background-image {
+      transform:scale(1.15);
+      transition: transform 5s cubic-bezier(0.25, 0.46, 0.45, 0.94); 
+    }
+
+    & .item-content {
+      opacity: 0.9; 
+    }
+  }
+
   
   &.large {
     height: 46vh; //1.57x directory itm height; maybe look for a function to do this?
@@ -21,6 +34,13 @@
   &:last-child {
     margin-left: 7.5px;
   }
+
+  .background-image {
+    width: 100%;
+    height: 100%; 
+    background-position: center;
+    background-size: cover;
+  }
   
   .item-content {
     height: 90px;
@@ -30,12 +50,16 @@
     align-items: center;
     justify-content: center;
     border: 1px solid black;
+    background-color: white;
+    opacity: 0.7; 
+    letter-spacing: 1.5px;
+    position: absolute; 
     
     .item-title {
       font-weight: bold;
       margin-bottom: 6px;
       font-size: 22px;
-      color: #4a4a4a;
+      color: #242822;
     }
 
     .item-subtitle {
