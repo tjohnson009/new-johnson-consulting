@@ -31,14 +31,14 @@ class Directory extends React.Component {
                 id: 4, 
                 size: 'large', 
                 imageURL: 'https://images.unsplash.com/photo-1427751840561-9852520f8ce8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2555&q=80', 
-                linkURL: 'our-tools'
+                linkURL: 'tools'
             }, 
                 {
                 title: 'Our Founder', 
                 id: 5, 
                 size: 'large', 
                 imageURL: 'https://images.unsplash.com/photo-1503387837-b154d5074bd2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80', 
-                linkURL: 'our-founder'
+                linkURL: 'founder'
 
             }, 
             ]}
