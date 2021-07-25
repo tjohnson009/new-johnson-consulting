@@ -9,7 +9,7 @@ class ToolsPage extends React.Component {
         super(props); 
     
         this.state = {
-            tools: PRODUCT_DATA, 
+            tools: PRODUCT_DATA, //Tools is an ARRAY
         }
     }
 

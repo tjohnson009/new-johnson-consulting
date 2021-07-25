@@ -15,10 +15,10 @@ class Directory extends React.Component {
                 linkURL: 'birkman'
             }, 
                 {
-                title: 'StrengthFinders Report', 
+                title: 'StrengthsFinder Report', 
                 id: 2, 
                 imageURL: 'https://images.unsplash.com/photo-1581091877018-dac6a371d50f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80', 
-                linkURL: 'strengthfinders'
+                linkURL: 'strengthsfinder'
             }, 
                 {
                 title: 'DISC Report', 

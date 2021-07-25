@@ -23,7 +23,7 @@ const PRODUCT_DATA = [
         id: 3,
         name: "Marriage Signature Report",
         imageURL:
-          "https://images.squarespace-cdn.com/content/v1/54c85373e4b059985165a906/1510162679702-18MBGUACJ9SA27MZVU2X/image-asset.png?format=1000w", 
+          "https://images.squarespace-cdn.com/content/v1/54c85373e4b059985165a906/1510162679702-18MBGUACJ9SA27MZVU2X/image-asset.png?format=1000w",
         price: 75,
       },
       {
@@ -82,31 +82,34 @@ const PRODUCT_DATA = [
   {
     // SF Products
     id: 2,
-    title: "StrengthFinders Assessment",
-    routeName: "tools/strengthfinders",
+    title: "StrengthsFinder Assessment",
+    routeName: "tools/strengthsfinder",
     reports: [
       {
         id: 1,
         name: "Top 5 Strengths Report",
-        imageURL: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
+        imageURL:
+          "https://high5test.com/wp-content/uploads/2021/04/5only-260x300.png",
         price: 50,
       },
       {
         id: 2,
         name: "Top 10 Strengths Report",
-        imageURL: "https://i.ibb.co/ypkgK0X/blue-beanie.png",
+        imageURL:
+          "https://images-na.ssl-images-amazon.com/images/I/51M2iCZYfiL._SX360_BO1,204,203,200_.jpg",
         price: 75,
       },
       {
         id: 3,
         name: "Top 10, Bottom 5 Strengths Report",
-        imageURL: "https://i.ibb.co/QdJwgmp/brown-cowboy.png",
+        imageURL:
+          "https://mrz223.files.wordpress.com/2013/10/core_clarity.jpg?w=990",
         price: 115,
       },
       {
         id: 4,
         name: "Full 34 Strengths Report",
-        imageURL: "https://i.ibb.co/RjBLWxB/grey-brim.png",
+        imageURL: "https://i.ytimg.com/vi/ID_fdLLnbnU/maxresdefault.jpg",
         price: 125,
       },
     ],
