@@ -117,13 +117,15 @@ const PRODUCT_DATA = [
       {
         id: 5,
         name: "Strength Coaching Short Term",
-        imageURL: "https://i.ibb.co/YTjW3vF/green-beanie.png",
+        imageURL:
+          "https://www.elegantthemes.com/blog/wp-content/uploads/2020/02/gallop-strength-finder-featured-image.jpg",
         price: 50,
       },
       {
         id: 6,
         name: "Strength Coaching Long Term",
-        imageURL: "https://i.ibb.co/rKBDvJX/palm-tree-cap.png",
+        imageURL:
+          "https://www.elegantthemes.com/blog/wp-content/uploads/2020/02/gallop-strength-finder-featured-image.jpg",
         price: 125,
       },
     ],
@@ -137,13 +139,15 @@ const PRODUCT_DATA = [
       {
         id: 1,
         name: "DISC Individual Assessment",
-        imageURL: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
+        imageURL:
+          "https://i0.wp.com/nataliegraycoaching.com/wp-content/uploads/2021/01/DISC-coaching-1.jpg?w=1020&ssl=1",
         price: 50,
       },
       {
         id: 2,
         name: "DISC Team Assessment",
-        imageURL: "https://i.ibb.co/ypkgK0X/blue-beanie.png",
+        imageURL:
+          "https://discvalueprofiles.com/product_images/uploaded_images/screen-shot-2019-05-19-at-3.51.54-pm.png",
         price: 75,
       },
     ],
@@ -151,13 +155,13 @@ const PRODUCT_DATA = [
       {
         id: 3,
         name: "DISC Coaching Short Term",
-        imageURL: "https://i.ibb.co/QdJwgmp/brown-cowboy.png",
+        imageURL: "https://www.ttisuccessinsights.com.au/images/uploads/DISC_Behavioural_Reports_for_People__Jobs.jpg",
         price: 115,
       },
       {
         id: 4,
         name: "DISC COaching Long Term",
-        imageURL: "https://i.ibb.co/RjBLWxB/grey-brim.png",
+        imageURL: "https://www.ttisuccessinsights.com.au/images/uploads/DISC_Behavioural_Reports_for_People__Jobs.jpg",
         price: 125,
       },
     ],
