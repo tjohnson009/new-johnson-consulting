@@ -1,4 +1,10 @@
 body {
     font-family: 'Open Sans Condensed', sans-serif;
-    padding: 1vw 4vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
+a {
+    text-decoration: none;
+    color: black; 
 }
