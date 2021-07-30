@@ -1,4 +1,6 @@
 import React from 'react'; 
+import FormInput from '../form-input/form-input.component'; 
+import PersonalizedButton from '../button/personalized-button.component';
 
 class SignIn extends React.Component {
     constructor() {
@@ -28,16 +30,15 @@ class SignIn extends React.Component {
                 <span>Sign in with your email and password</span>
 
             <form onSubmit={this.handleSubmit} action="">
-                <label htmlFor="email">Email: </label>
-                <input type="email" name='email' onChange={this.handleChange} value={this.state.email} required/>
-
-                <label htmlFor="email">Password: </label>
-                <input 
-                type="password" name='password'  
-                value={this.state.password} onChange={this.handleChange} 
-                required/>
+                <FormInput type="email" name='email' label='Email' handleChange={this.handleChange} value={this.state.email} required/>
                 
-                <input type="submit" value="Submit Form" />
+                <FormInput label='Password'
+                type="password" name='password'  
+                value={this.state.password} handleChange={this.handleChange} 
+                required />
+                
+                <PersonalizedButton type="submit" > Sign In </PersonalizedButton>
+
                 </form>
             </div>
         )
