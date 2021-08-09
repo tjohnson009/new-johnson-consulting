@@ -43,8 +43,6 @@ class App extends React.Component {
     );
 
   }
-
   
 }
-// export const unsubscribeFromAuth = auth.unsubscribeFromAuth(); 
 export default App;
