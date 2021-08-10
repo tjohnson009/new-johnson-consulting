@@ -2,7 +2,7 @@ import React from 'react';
 import FormInput from '../form-input/form-input.component';
 import PersonalizedButton from '../button/personalized-button.component';
 import { auth, createUserProfileRecord } from '../../firebase/firebase.utilities'; 
-import './sign-up.styles.scss'; 
+import '../../pages/sign-in-and-sign-up/sign-in-and-sign-up.styles.scss'; 
 
 class SignUp extends React.Component {
     constructor() {
@@ -15,6 +15,39 @@ class SignUp extends React.Component {
             confirmPassword: ''
         }
     }
+
+    handleSubmit = async (e) => {
+        e.preventDefault(); // we want to prevent the form submit defaults
+        const {displayName, email, password, confirmPassword} = this.state; 
+        
+        if (password !== confirmPassword) {
+            alert('Password fields must match. '); 
+            return; 
+        } else {
+            try {
+                const { user } = auth.createUserWithEmailAndPassword(email, password); 
+            
+              await createUserProfileRecord(user, { displayName })
+
+              this.setState({
+                displayName: '', 
+                email: '', 
+                password: '', 
+                confirmPassword: ''
+              })
+            } catch (err) {
+                console.error(err.message); 
+            }
+        }
+        
+    }
+
+        handleChange = event => {
+            const { name, value } = event.target;
+            this.setState(
+          {  [name]: value } // dynamically sets the name value to the value of value
+            )
+        }
     
     render() {
         const {displayName, email, password, confirmPassword} = this.state; 
@@ -23,13 +56,33 @@ class SignUp extends React.Component {
                 <h2 className='title'>I don't have an account</h2>
                 <span>Sign up with your email and password</span>
                 <form className='sign-up-form' onSubmit='{}this.handleSubmit'>
-                    <FormInput type='text' name='displayName' value={displayName} onChange={this.handleChange} label='Display Name' required />
+                    <FormInput 
+                    type='text' 
+                    name='displayName' 
+                    value={displayName} 
+                    onChange={this.handleChange} 
+                    label='Display Name' required />
                     
-                    <FormInput type='email' name='email' value={email} onChange={this.handleChange} label='Email' required />
+                    <FormInput 
+                    type='email' 
+                    name='email' 
+                    value={email} 
+                    onChange={this.handleChange} 
+                    label='Email' required />
                     
-                    <FormInput type='password' name='password' value={password} onChange={this.handleChange} label='Password' required />
+                    <FormInput 
+                    type='password' 
+                    name='password' 
+                    value={password} 
+                    onChange={this.handleChange} 
+                    label='Password' required />
                     
-                    <FormInput type='password' name='confirm-password' value={confirmPassword} onChange={this.handleChange} label='Confirm Password' required />
+                    <FormInput 
+                    type='password' 
+                    name='confirm-password' 
+                    value={confirmPassword} 
+                    onChange={this.handleChange} 
+                    label='Confirm Password' required />
 
                 </form>
                 <PersonalizedButton type='submit'>Sign Up</PersonalizedButton>
